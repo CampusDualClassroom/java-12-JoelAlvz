@@ -55,8 +55,11 @@ package com.campusdual.classroom;
         }
 
         public void brake() {
-            if (tachometer >= 1000 && speedometer >= 0){
+            if (tachometer >= 1000 && speedometer > 0){
                 speedometer -= 10;
+            }else {
+                tachometer=0;
+                speedometer=0;
             }
 
         }
